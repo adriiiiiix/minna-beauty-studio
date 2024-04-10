@@ -1,0 +1,1006 @@
+<!DOCTYPE html>
+<html lang="ro">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, shrink-to-fit=no"
+		/>
+		<title>Minna Beauty Studio</title>
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+		/>
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+		/>
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+		/>
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.7.2/font/bootstrap-icons.css"
+		/>
+
+		<style>
+			body {
+				font-family: "Comic Sans MS", sans-serif;
+				background-color: #f8f8f8;
+				color: black;
+				margin: 0;
+				padding: 0;
+			}
+
+			header {
+				background: linear-gradient(45deg, #ffccd6, #ff99ac);
+				color: #ffffff;
+				padding: 20px 0;
+				text-align: center;
+			}
+
+			h1 {
+				font-size: 2.5em;
+				margin-bottom: 10px;
+			}
+
+			p {
+				font-size: 1.2em;
+				margin-top: 0;
+			}
+
+			section {
+				padding: 50px 0;
+			}
+
+			.service {
+				background-color: #ffffff;
+				padding: 20px;
+				margin-top: 20px;
+				border-radius: 10px;
+				box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+			}
+
+			.service img {
+				width: 100%;
+				max-height: 300px;
+				object-fit: cover;
+				border-radius: 10px;
+				margin-bottom: 15px;
+				transition: transform 0.3s ease-in-out;
+			}
+
+			.service img:hover {
+				transform: scale(1.05);
+			}
+
+			h3 {
+				font-size: 1.8em;
+				margin-bottom: 10px;
+				color: #ff6699;
+			}
+
+			.pricing {
+				background: linear-gradient(45deg, #ffccd6, #ff99ac);
+				padding: 40px 0;
+			}
+
+			.pricing h2 {
+				color: #ffffff;
+				font-size: 2em;
+				margin-bottom: 20px;
+			}
+
+			.price-list li {
+				padding: 10px 0;
+				border-bottom: 1px solid #ff6699;
+				font-size: 1.2em;
+			}
+
+			.contact {
+				background-color: #f8f8f8;
+				padding: 40px 0;
+				text-align: center;
+			}
+
+			.contact h2 {
+				color: black;
+				font-size: 2em;
+				margin-bottom: 20px;
+			}
+
+			.contact-info p {
+				font-size: 1.2em;
+				margin: 10px 0;
+				color: #000;
+			}
+
+			footer {
+				background: linear-gradient(45deg, #ffccd6, #ff99ac);
+				color: #ffffff;
+				padding: 20px 0;
+				text-align: center;
+			}
+
+			footer p {
+				font-size: 1.2em;
+				margin-bottom: 0;
+			}
+
+			.contact-info p a {
+				color: #ff6699;
+				text-decoration: none;
+			}
+
+			.contact-info p a:hover {
+				text-decoration: underline;
+			}
+			@media (min-width: 768px) {
+				.banner {
+					height: 70vh;
+				}
+			}
+
+			@media (min-width: 992px) {
+				.banner {
+					height: 50vh;
+				}
+			}
+
+			@media (min-width: 1200px) {
+				.banner {
+					height: 40vh;
+				}
+			}
+
+			.gallery-slider {
+				display: flex;
+				overflow-x: scroll;
+				scroll-snap-type: x mandatory;
+				margin: 20px 0;
+			}
+
+			.gallery-item {
+				flex: 0 0 auto;
+				width: 50vw;
+				scroll-snap-align: start;
+				margin-right: 10px;
+			}
+
+			.gallery-item img {
+				width: 100%;
+				height: auto;
+				max-height: 600px;
+				object-fit: cover;
+				border-radius: 10px;
+				transition: transform 0.3s ease-in-out;
+			}
+
+			.gallery-item img:hover {
+				transform: scale(1.05);
+			}
+			table {
+				width: 100%;
+				margin-bottom: 20px;
+				border-collapse: collapse;
+				border-radius: 10px;
+				overflow: hidden;
+				box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+			}
+
+			th,
+			td {
+				padding: 15px;
+				text-align: left;
+				border-bottom: 1px solid #ff6699;
+			}
+
+			th {
+				background-color: #ffccd6;
+				color: #ff6699;
+			}
+
+			td {
+				background-color: #ffffff;
+				color: black;
+			}
+
+			nav {
+				background-color: white;
+				box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+			}
+
+			.navbar-brand {
+				color: #ff3366;
+				font-size: 1.8em;
+				font-weight: bold;
+			}
+
+			.navbar-nav {
+				list-style: none;
+				margin: 0;
+				padding: 0;
+				display: flex;
+			}
+
+			.nav-item {
+				margin-right: 15px;
+			}
+
+			.nav-link {
+				color: #555;
+				text-decoration: none;
+				font-size: 1.4em;
+				padding: 8px 15px;
+				border-radius: 20px;
+				transition: background-color 0.3s, color 0.3s;
+			}
+
+			.nav-link:hover {
+				background: #ff3366;
+				background: radial-gradient(circle, #ffccd6 0%, #ff99ac 85%);
+				color: #fff;
+			}
+			@media (max-width: 767px) {
+				.navbar-toggler {
+					visibility: visible;
+					background-image: radial-gradient(
+						circle,
+						#ffffff 0%,
+						#ff99ac 85%
+					);
+					color: #000;
+				}
+
+				.navbar-toggler:focus,
+				.navbar-toggler:active {
+					outline: none;
+					box-shadow: none;
+				}
+			}
+
+			#reviews {
+				background: linear-gradient(45deg, #ffccd6, #ff99ac);
+				padding: 50px 0;
+			}
+
+			.slick-slider {
+				margin-top: 20px;
+			}
+
+			.review-item {
+				background-color: white;
+				padding: 20px;
+				margin-bottom: 20px;
+				border-radius: 10px;
+				/*box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);*/
+			}
+
+			.review-author {
+				margin-top: 15px;
+				font-style: italic;
+				color: #ff6699;
+			}
+
+			@media (max-width: 767px) {
+				.slick-slider {
+					margin-top: 10px;
+				}
+
+				.review-item {
+					margin-right: 0;
+				}
+			}
+
+			.dark-mode {
+				background-color: #111;
+				color: #fff;
+			}
+
+			.dark-mode header {
+				background: linear-gradient(45deg, #222, #111);
+				color: #ffffff;
+			}
+
+			.dark-mode section {
+				background-color: #222;
+			}
+
+			.dark-mode .service {
+				background-color: #333;
+				color: #fff;
+			}
+
+			.dark-mode .pricing {
+				background: linear-gradient(45deg, #222, #111);
+				color: #fff;
+			}
+
+			.dark-mode .contact {
+				background-color: #222;
+				color: #fff;
+			}
+
+			.dark-mode #reviews {
+				background: linear-gradient(45deg, #222, #111);
+				color: #fff;
+			}
+
+			.dark-mode .review-item {
+				background-color: white;
+				color: black;
+			}
+			.dark-mode footer {
+				background: linear-gradient(45deg, #222, #111);
+				color: #fff;
+			}
+
+			.dark-mode nav {
+				background-color: #222;
+			}
+
+			.dark-mode h2 {
+				color: white;
+			}
+
+			.toggle-container {
+				display: inline-block;
+				position: relative;
+				padding-top: 15px;
+			}
+
+			.theme-toggle {
+				display: none;
+			}
+
+			.toggle {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				width: 60px;
+				height: 30px;
+				border-radius: 15px;
+				background-color: #e4e4e4;
+				cursor: pointer;
+				position: relative;
+			}
+
+			.moon {
+				position: absolute;
+				left: 5px;
+				display: none;
+			}
+
+			.sun {
+				position: absolute;
+				right: 5px;
+			}
+
+			.theme-toggle:checked + .toggle .moon {
+				display: block;
+			}
+
+			.theme-toggle:checked + .toggle .sun {
+				display: none;
+			}
+
+			.dark-mode .navbar-nav .nav-link {
+				color: #fff !important;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header>
+			<img
+				src="417508652_278968528527941_8186021338730464520_n.jpg"
+				style="
+					width: 95%;
+					max-height: 500px;
+					object-fit: cover;
+					border-radius: 10px;
+				"
+			/>
+		</header>
+
+		<nav class="navbar navbar-expand-lg navbar-dark">
+			<div class="container">
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-toggle="collapse"
+					data-target="#navbarNav"
+					aria-controls="navbarNav"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item">
+							<a
+								class="nav-link"
+								href="#services"
+								style="color: black"
+								>Servicii</a
+							>
+						</li>
+						<li class="nav-item">
+							<a
+								class="nav-link"
+								href="#pricing"
+								style="color: black"
+								>Prețuri</a
+							>
+						</li>
+						<li class="nav-item">
+							<a
+								class="nav-link"
+								href="#gallery"
+								style="color: black"
+								>Portofoliu</a
+							>
+						</li>
+						<li class="nav-item">
+							<a
+								class="nav-link"
+								href="#reviews"
+								style="color: black"
+								>Recenzii</a
+							>
+						</li>
+						<li class="nav-item">
+							<a
+								class="nav-link"
+								href="#contact"
+								style="color: black"
+								>Contact</a
+							>
+						</li>
+					</ul>
+					<div class="toggle-container">
+						<input
+							type="checkbox"
+							id="themeToggle"
+							class="theme-toggle"
+						/>
+						<label for="themeToggle" class="toggle">
+							<div class="moon">🌙</div>
+							<div class="sun">☀️</div>
+						</label>
+					</div>
+				</div>
+			</div>
+		</nav>
+
+		<section id="services" class="text-center">
+			<div class="container">
+				<h2>Servicii</h2>
+				<div class="row">
+					<div class="col-md-6">
+						<div class="service">
+							<img
+								src="429578716_315148768243250_6960312016783277278_n.jpeg"
+								alt="Nail Art"
+								class="service-image"
+							/>
+							<h3>MANICHIURĂ</h3>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="service">
+							<img
+								src="429667212_313309071760553_3238907492354546381_n.jpg"
+								alt="Extensii Gene"
+								class="service-image"
+							/>
+							<h3>EXTENSII GENE</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="pricing" class="text-center pricing">
+			<div class="container">
+				<h2>Prețuri</h2>
+				<div class="row">
+					<div class="col-md-6">
+						<div class="service">
+							<h3>GENE</h3>
+							<ul
+								class="price-list"
+								style="list-style: none; padding: 0"
+							>
+								<p align="left">APLICARE</p>
+								<table>
+									<tr>
+										<th>Detalii</th>
+										<th>Preț</th>
+									</tr>
+									<tr>
+										<td>1D/1-2D</td>
+										<td>110/120 RON</td>
+									</tr>
+									<tr>
+										<td>2D/2-3D</td>
+										<td>130/140 RON</td>
+									</tr>
+									<tr>
+										<td>3D/3-4D</td>
+										<td>150/160 RON</td>
+									</tr>
+									<tr>
+										<td>4D/4-5D</td>
+										<td>170/180 RON</td>
+									</tr>
+									<tr>
+										<td>5D/5-6D</td>
+										<td>190/200 RON</td>
+									</tr>
+								</table>
+
+								<br />
+								<p align="left">ÎNTREȚINERE</p>
+								<table>
+									<tr>
+										<th>Detalii</th>
+										<th>Preț</th>
+									</tr>
+									<tr>
+										<td>1D/1-2D</td>
+										<td>90/100 RON</td>
+									</tr>
+									<tr>
+										<td>2D/2-3D</td>
+										<td>110/120 RON</td>
+									</tr>
+									<tr>
+										<td>3D/3-4D</td>
+										<td>130/140 RON</td>
+									</tr>
+									<tr>
+										<td>4D/4-5D</td>
+										<td>150/160 RON</td>
+									</tr>
+									<tr>
+										<td>5D/5-6D</td>
+										<td>170/180 RON</td>
+									</tr>
+								</table>
+								<br/>
+								<p align="left">EXTRA</p>
+								<table>
+									<tr>
+										<th>Detalii</th>
+										<th>Preț</th>
+									</tr>
+									<tr>
+										<td>Curburi speciale (N, M, L)</td>
+										<td>+20 RON</td>
+									</tr>
+									<tr>
+										<td>Efecte speciale (Foxy, Wispy)</td>
+										<td>+20 RON</td>
+									</tr>
+									<tr>
+										<td>Demontare</td>
+										<td>+20 RON</td>
+									</tr>
+								</table>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="service">
+							<h3>MANICHIURĂ</h3>
+							<p align="left">APLICARE</p>
+							<ul
+								class="price-list"
+								style="list-style: none; padding: 0"
+							>
+								<table>
+									<tr>
+										<th>Detalii</th>
+										<th>Preț</th>
+									</tr>
+									<tr>
+										<td>Ojă semi cu apex</td>
+										<td>135 RON</td>
+									</tr>
+									<tr>
+										<td>Construcție 1-3</td>
+										<td>130/150/170 RON</td>
+									</tr>
+									<tr>
+										<td>Construcție 4-5</td>
+										<td>190 RON</td>
+									</tr>
+									<tr>
+										<td>Migdală 6-8</td>
+										<td>220 RON</td>
+									</tr>
+									<tr>
+										<td>Manichiură clasică</td>
+										<td>70 RON</td>
+									</tr>
+								</table>
+								<br/>
+								<p align="left">ÎNTREȚINERE</p>
+								<table>
+									<tr>
+										<th>Detalii</th>
+										<th>Preț</th>
+									</tr>
+									<tr>
+										<td>Întreținere 1-3</td>
+										<td>120/140/150 RON</td>
+									</tr>
+									<tr>
+										<td>Întreținere 4-5</td>
+										<td>170 RON</td>
+									</tr>
+									<tr>
+										<td>Întreținere migdală 6-8</td>
+										<td>180 RON</td>
+									</tr>
+								</table>
+								<br />
+								<p align="left">EXTRA</p>
+								<table>
+									<tr>
+										<th>Detalii</th>
+										<th>Preț</th>
+									</tr>
+									<tr>
+										<td>French</td>
+										<td>+20 RON</td>
+									</tr>
+									<tr>
+										<td>Baby Boommer</td>
+										<td>+30 RON</td>
+									</tr>
+									<tr>
+										<td>Design pietre</td>
+										<td>+5 RON/unghie</td>
+									</tr>
+								</table>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="gallery" class="text-center">
+			<div class="container">
+				<h2>Portofoliu</h2>
+				<div class="gallery-slider">
+					<div class="gallery-item">
+						<img
+							src="434358360_1501723824019767_3629207629117067371_n.jpg"
+							alt="Imagine 1"
+						/>
+					</div>
+					<div class="gallery-item">
+						<img
+							src="434572134_7230169300434592_2087065496612722515_n.jpg"
+							alt="Imagine 2"
+						/>
+					</div>
+					<div class="gallery-item">
+						<img
+							src="434571606_1392277804994353_1756060970943668534_n.jpg"
+							alt="Imagine 3"
+						/>
+					</div>
+					<div class="gallery-item">
+						<img
+							src="434594201_1143347420350485_3692531446495042271_n.jpg"
+							alt="Imagine 4"
+						/>
+					</div>
+					<div class="gallery-item">
+						<img
+							src="434862491_384742954447634_1477526867688586680_n.jpg"
+							alt="Imagine 5"
+						/>
+					</div>
+					<div class="gallery-item">
+						<img
+							src="434831760_949944863190884_6575958254152511390_n.jpg"
+							alt="Imagine 6"
+						/>
+					</div>
+					<div class="gallery-item">
+						<img
+							src="PHOTO-2024-03-06-21-34-04 2.jpg"
+							alt="Imagine 7"
+						/>
+					</div>
+					<div class="gallery-item">
+						<img
+							src="PHOTO-2024-03-06-21-34-04.jpg"
+							alt="Imagine 8"
+						/>
+					</div>
+					<div class="gallery-item">
+						<img
+							src="PHOTO-2024-03-06-21-34-06 3.jpg"
+							alt="Imagine 9"
+						/>
+					</div>
+					<div class="gallery-item">
+						<img
+							src="PHOTO-2024-03-06-21-34-07 2.jpg"
+							alt="Imagine 10"
+						/>
+					</div>
+					<div class="gallery-item">
+						<img
+							src="PHOTO-2024-03-06-21-34-07 3.jpg"
+							alt="Imagine 11"
+						/>
+					</div>
+					<div class="gallery-item">
+						<img
+							src="426512866_305755282515932_3123407122225720268_n.jpg"
+							alt="Imagine 12"
+						/>
+					</div>
+					<div class="gallery-item">
+						<img
+							src="403999987_249281111496683_6928312009914397807_n.jpg"
+							alt="Imagine 13"
+						/>
+					</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="reviews" class="text-center">
+			<div class="container">
+				<h2 style="color: white">Recenzii</h2>
+				<img
+					src="kisspng-clip-art-stock-photography-gold-image-shutterstock-customer-reviews-elite-mechanical-5b6af56562c201.5897332215337362934045-removebg-preview.png"
+					alt="5 stele aurii"
+					style="width: 155px; margin-top: 2px"
+				/>
+				<div class="slick-slider">
+					<div class="review-item">
+						<p style="text-align: justify; font-size: 16px">
+							Recent am avut o experiență absolut fantastică la
+							✨<b><i> Minna Beauty Studio </i></b>✨ unde mi-am
+							făcut manichiura. Ramo este incredibilă și a creat
+							pentru mine o manichiură care a depășit cu mult
+							așteptările mele. ❤️ <br /><br />A fost uimitoare în
+							ceea ce privește abilitățile ei. Ea a ascultat cu
+							atenție preferințele mele și a creat cu pricepere o
+							manichiură care să se potrivească perfect stilului
+							meu. 🥰 <br /><br />Produsele folosite au fost de
+							cea mai înaltă calitate, iar rezultatul a fost
+							absolut impresionant. Culoarea și designul
+							manichiurii au fost impecabile, iar unghiile mele
+							arată acum minunat. O recomand cu căldură pentru
+							serviciile ei excepționale. 😍 <br /><br />Mulțumesc
+							din suflet pentru manichiura superbă! 😘
+						</p>
+						<p class="review-author">- Adry -</p>
+					</div>
+					<div class="review-item">
+						<p style="font-size: 16px">
+							Cea mai drăguță și talentată. 💜
+						</p>
+						<p class="review-author">- Anonim -</p>
+					</div>
+					<div class="review-item">
+						<p style="font-size: 16px">
+							O recomand cu siguranță pe Ramona!! Aplicare rapidă
+							și rezistență extrem de bună! Lucrează foarte finuț
+							și cu atenție. Plus că este o fată extrem de drăguță
+							și amabilă! 🥰
+						</p>
+						<p class="review-author">- Anonim -</p>
+					</div>
+					<div class="review-item">
+						<p style="font-size: 16px">
+							Atmosferă plăcută, produse de calitate și artist
+							profesionist. 😊
+						</p>
+						<p class="review-author">- Anonim -</p>
+					</div>
+					<div class="review-item">
+						<p style="font-size: 16px">
+							✨💜<b><i> THE BEST NAIL ARTIST! </i></b>✨💜
+							<br /><br />E atentă la detalii, lucrează curat și
+							cu grijă. E o persoană caldă și super sociabilă. O
+							recomand cu drag pe Minna! ❤️
+						</p>
+						<p class="review-author">- Anonim -</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="contact" class="contact">
+			<div class="container">
+				<h2>Contact</h2>
+				<div class="row">
+					<div class="col-md-4 text-center">
+						<i
+							class="bi bi-telephone"
+							style="font-size: 24px; color: #ff6699"
+						></i>
+						<h4 style="font-size: 20px">Telefon</h4>
+						<p>
+							<a
+								href="https://api.whatsapp.com/send?phone=%2B40760970940&app=facebook&entry_point=page_cta&fbclid=IwAR3M0h3U25Bz7maW7GXIac1yGU0Ar5TytyP78yAkjesjF-gHJA03KCjANsU"
+								style="font-size: 18px; color: #ff6699"
+								>+40 760 970 940</a
+							>
+						</p>
+					</div>
+					<div class="col-md-4 text-center">
+						<i
+							class="bi bi-geo-alt"
+							style="font-size: 24px; color: #ff6699"
+						></i>
+						<h4 style="font-size: 20px">Adresă</h4>
+						<p>
+							<iframe
+								src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d233858.32891896667!2d25.7172283854615!3d44.472214711399786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b1fe388dd10a45%3A0xe31401f9943f6f81!2sStrada%20Izvorul%20Rece%203%2C%20Bucure%C8%99ti!5e0!3m2!1sro!2sro!4v1709751482169!5m2!1sro!2sro"
+								width="100%"
+								height="230"
+								style="
+									border: 2px solid #ff69b4;
+									border-radius: 10px;
+								"
+								allowfullscreen=""
+								loading="lazy"
+								referrerpolicy="no-referrer-when-downgrade"
+							></iframe>
+						</p>
+					</div>
+					<div class="col-md-4 text-center">
+						<img
+							src="392868238_232694799821981_2316945512311677541_n.jpg"
+							alt="Contact"
+							width="140"
+							height="140"
+							style="
+								border-radius: 50%;
+								border: 2px solid #ff69b4;
+							"
+						/>
+						<br />
+						<h4 style="font-size: 18px; padding-top: 10px">
+							Mă găsești și pe:
+						</h4>
+						<div>
+							<a
+								href="https://www.instagram.com/minna_beauty.studio"
+								target="_blank"
+								style="margin-right: 10px"
+							>
+								<i
+									class="bi bi-instagram"
+									style="font-size: 24px; color: #ff6699"
+								></i>
+							</a>
+							<a
+								href="https://www.facebook.com/profile.php?id=100092443870133"
+								target="_blank"
+								style="margin-right: 10px"
+							>
+								<i
+									class="bi bi-facebook"
+									style="font-size: 24px; color: #ff6699"
+								></i>
+							</a>
+							<a
+								href="https://www.tiktok.com/@minna.beauty?is_from_webapp=1&sender_device=pc"
+								target="_blank"
+							>
+								<i
+									class="bi bi-tiktok"
+									style="font-size: 24px; color: #ff6699"
+								></i>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer>
+			<p>
+				&copy; 2024 Minna Beauty Studio
+				<a href="https://github.com/adriiiiiix" target="_blank">
+					<img
+						src="https://assets.tryremotely.com/o6s228g2szu1ilu3pvcre2gnvws4"
+						alt="GitHub Logo"
+						style="
+							width: 30px;
+							height: 30px;
+							margin-left: 0px;
+							border-radius: 50%;
+						"
+					/>
+				</a>
+				Toate drepturile sunt rezervate
+			</p>
+		</footer>
+
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+		<script>
+			$(document).ready(function () {
+				$(".slick-slider").slick({
+					prevArrow:
+						'<button class="slick-prev" onclick="slickPrev()">❮</button>',
+					nextArrow:
+						'<button class="slick-next" onclick="slickNext()">❯</button>',
+				});
+			});
+
+			function slickPrev() {
+				$(".slick-slider").slick("slickPrev");
+			}
+
+			function slickNext() {
+				$(".slick-slider").slick("slickNext");
+			}
+		</script>
+		<script>
+			$(document).ready(function () {
+				$(".gallery-slider").slick({
+					autoplay: true,
+					autoplaySpeed: 2000,
+					arrows: false,
+					prevArrow:
+						'<button type="button" class="slick-prev">Previous</button>',
+					nextArrow:
+						'<button type="button" class="slick-next">Next</button>',
+					dots: true,
+					infinite: true,
+					slidesToShow: 2,
+					slidesToScroll: 2,
+				});
+			});
+		</script>
+		<script>
+			document.addEventListener("DOMContentLoaded", function () {
+				const themeToggle = document.getElementById("themeToggle");
+				if (localStorage.getItem("theme") === "dark") {
+					document.body.classList.add("dark-mode");
+					themeToggle.checked = true;
+				}
+				themeToggle.addEventListener("change", function () {
+					if (themeToggle.checked) {
+						document.body.classList.add("dark-mode");
+						localStorage.setItem("theme", "dark");
+					} else {
+						document.body.classList.remove("dark-mode");
+						localStorage.removeItem("theme");
+					}
+				});
+			});
+		</script>
+	</body>
+</html>
