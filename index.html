@@ -277,7 +277,7 @@
 				padding: 50px 0;
 			}
 
-			.slick-slider {
+			.review-slider {
 				margin-top: 20px;
 			}
 
@@ -296,7 +296,7 @@
 			}
 
 			@media (max-width: 767px) {
-				.slick-slider {
+				.review-slider {
 					margin-top: 10px;
 				}
 
@@ -781,7 +781,7 @@
 					alt="5 stele aurii"
 					style="width: 155px; margin-top: 2px"
 				/>
-				<div class="slick-slider">
+				<div class="review-slider">
 					<div class="review-item">
 						<p style="text-align: justify; font-size: 16px">
 							Recent am avut o experiență absolut fantastică la
@@ -950,22 +950,30 @@
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 		<script>
-			$(document).ready(function () {
-				$(".slick-slider").slick({
-					prevArrow:
-						'<button class="slick-prev" onclick="slickPrev()">❮</button>',
-					nextArrow:
-						'<button class="slick-next" onclick="slickNext()">❯</button>',
-				});
-			});
+				$(document).ready(function () {
+    $(".slick-slider").slick({
+        prevArrow: '<button class="slick-prev" onclick="slickPrev()">❮</button>',
+        nextArrow: '<button class="slick-next" onclick="slickNext()">❯</button>',
+    });
 
-			function slickPrev() {
-				$(".slick-slider").slick("slickPrev");
-			}
+    $(".review-slider").slick({
+        arrows: true,
+        prevArrow: '<button type="button" class="slick-prev">Previous</button>',
+        nextArrow: '<button type="button" class="slick-next">Next</button>',
+        dots: true,
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+    });
+});
 
-			function slickNext() {
-				$(".slick-slider").slick("slickNext");
-			}
+function slickPrev() {
+    $(".slick-slider").slick("slickPrev");
+}
+
+function slickNext() {
+    $(".slick-slider").slick("slickNext");
+}
 		</script>
 		<script>
 			$(document).ready(function () {
