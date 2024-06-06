@@ -598,7 +598,7 @@
 
         .service-img {
           width: 40%;
-          max-height: 400px;
+          max-height: 450px;
           object-fit: fill;
           border-radius: 10px;
           margin-bottom: 15px;
@@ -965,7 +965,7 @@
         <div class="res-menu-button" onclick="toggleMenu()">&equiv;</div>
         <ul class="page-menu">
           <li class="menu-link">
-            <a class="link-a" href="#about">ACASĂ</a>
+            <a class="link-a" href="index.html">ACASĂ</a>
           </li>
           <li class="menu-link">
             <a class="link-a" href="#services">SERVICII</a>
@@ -1360,33 +1360,26 @@
                 <p class="one" style="font-size: 18px; color: #ff6699">
                   <a href="https://api.whatsapp.com/send?phone=%2B40760970940&app=facebook&entry_point=page_cta&fbclid=IwAR3M0h3U25Bz7maW7GXIac1yGU0Ar5TytyP78yAkjesjF-gHJA03KCjANsU" target="_blank">+40 760 970 940</a>
                 </p>
-                <br>
-                <img src="392868238_232694799821981_2316945512311677541_n.jpg" alt="Contact" width="140" height="140" style="border-radius: 50%; border: 2px solid #ff69b4;">
-                <br>
-                <p class="one" style="font-size: 18px; padding-top: 10px; color: rgb(0, 0, 0);;">Mă găsești și pe:</p>
-                <div>
-                  <br>
-                  <a href="https://www.instagram.com/minna_beauty.studio" target="_blank" style="margin-right: 10px">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/132px-Instagram_logo_2016.svg.png" width="30">
-                  </a>
-                  <a href="https://www.facebook.com/profile.php?id=100092443870133" target="_blank" style="margin-right: 10px">
-                    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/04/Facebook_f_logo_%282021%29.svg/512px-Facebook_f_logo_%282021%29.svg.png" width="30">
-                  </a>
-                  <a href="https://www.tiktok.com/@minna.beauty?is_from_webapp=1&sender_device=pc" target="_blank">
-                    <img src="https://cdn.inspireuplift.com/uploads/images/seller_products/1690970852_a2-01.png" width="30">
-                  </a>
-                </div>
-                <br>
             </table>
         </div>
         <div class="column">
-          <p class="one" style="font-size: 18px; padding-top: 10px; color: rgb(0, 0, 0);">Adresă</p>
+          <img src="392868238_232694799821981_2316945512311677541_n.jpg" alt="Contact" width="140" height="140" style="border-radius: 50%; border: 2px solid #ff69b4;">
+          <br>
+          <p class="one" style="font-size: 18px; padding-top: 10px; color: rgb(0, 0, 0);">Mă găsești și pe:</p>
           <br>
             <!-- Tabelul pentru a doua categorie -->
             <table class="adress">
-              <p>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d233858.32891896667!2d25.7172283854615!3d44.472214711399786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b1fe388dd10a45%3A0xe31401f9943f6f81!2sStrada%20Izvorul%20Rece%203%2C%20Bucure%C8%99ti!5e0!3m2!1sro!2sro!4v1709751482169!5m2!1sro!2sro" width="50%" height="230" style="border: 2px solid #ff69b4; border-radius: 10px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-              </p>
+              <div>
+                <a href="https://www.instagram.com/minna_beauty.studio" target="_blank" style="margin-right: 10px">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/132px-Instagram_logo_2016.svg.png" width="25">
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=100092443870133" target="_blank" style="margin-right: 10px">
+                  <img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/04/Facebook_f_logo_%282021%29.svg/512px-Facebook_f_logo_%282021%29.svg.png" width="25">
+                </a>
+                <a href="https://www.tiktok.com/@minna.beauty?is_from_webapp=1&sender_device=pc" target="_blank">
+                  <img src="https://cdn.inspireuplift.com/uploads/images/seller_products/1690970852_a2-01.png" width="25">
+                </a>
+              </div>
             </table>
         </div>
     </div>
@@ -1527,7 +1520,9 @@
             <script>
               $(document).ready(function() {
                   $('.review-slider').slick({
-                      arrows: true,
+                      autoplay: true,
+                      autoplaySpeed: 2000,
+                      arrows: false,
                       prevArrow: '<button type="button" class="slick-prev">Previous</button>',
                       nextArrow: '<button type="button" class="slick-next">Next</button>',
                       dots: true,
