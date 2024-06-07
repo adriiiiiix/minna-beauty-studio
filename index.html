@@ -200,7 +200,7 @@
         }
         @media only screen and (max-width: 768px) {
           .page-menu-bar {
-            background: none;
+            background: linear-gradient(45deg, #ffccd6, #ff99ac);
           }
         }
 
@@ -958,9 +958,23 @@
         .page-menu.active {
           display: block;
         }
+
+        .center-container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+          height: 100%;
+        }
+
+        .centered-image {
+          border-radius: 50%;
+          border: 2px solid #ff69b4;
+          width: 140px;
+          height: 140px;
+        }
   </style>
     <body>
-
       <div class="page-menu-bar">
         <div class="res-menu-button" onclick="toggleMenu()">&equiv;</div>
         <ul class="page-menu">
@@ -1296,7 +1310,7 @@
             <div class="review-item">
               <p style="text-align: justify; font-size: 16px">
                 Recent am avut o experiență absolut fantastică la
-                ✨<b><i> Minna Beauty Studio </i></b>✨ unde mi-am
+                ✨ Minna Beauty Studio ✨ unde mi-am
                 făcut manichiura. Ramo este incredibilă și a creat
                 pentru mine o manichiură care a depășit cu mult
                 așteptările mele. ❤️ <br /><br />A fost uimitoare în
@@ -1363,8 +1377,6 @@
             </table>
         </div>
         <div class="column">
-          <img src="392868238_232694799821981_2316945512311677541_n.jpg" alt="Contact" width="140" height="140" style="border-radius: 50%; border: 2px solid #ff69b4;">
-          <br>
           <p class="one" style="font-size: 18px; padding-top: 10px; color: rgb(0, 0, 0);">Mă găsești și pe:</p>
           <br>
             <!-- Tabelul pentru a doua categorie -->
@@ -1381,6 +1393,9 @@
                 </a>
               </div>
             </table>
+        </div>
+        <div class="center-container">
+          <img src="392868238_232694799821981_2316945512311677541_n.jpg" alt="Contact" width="140" height="140" style="border-radius: 50%; border: 2px solid #ff69b4;" class="centered-image">
         </div>
     </div>
     </div>
