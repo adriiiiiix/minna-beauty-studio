@@ -875,8 +875,8 @@
         }
 
         .dark-mode .review-item {
-          background-color: #222;
-          color: #fff;
+          background-color: white;
+          color: black;
         }
 
         .dark-mode footer {
@@ -979,6 +979,12 @@
           border: 2px solid #ff69b4;
           width: 140px;
           height: 140px;
+        }
+
+        @media only screen and (max-width: 768px) {
+          html, body {
+            overflow-x: hidden;
+          }
         }
   </style>
   <body>
